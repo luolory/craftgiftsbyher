@@ -184,75 +184,99 @@ function updateLang() {
 const products = [
   {
     id: 1,
-    category: 'Brooch',
-    uses: ['festival', 'memorabilia'],
-    price: 30,
+    category: 'Accessory',
+    uses: ['festival', 'business'],
+    price: 35,
     image: 'assets/craft1.avif',
     name: {
-      en: 'Hand‑Carved Woodcut Brooch',
-      zh: '手工木刻胸针'
+      en: 'Yarn Woven Brooch',
+      zh: '津派毛线手工编织胸针'
     },
     description: {
-      en: 'A brooch carved with traditional woodcut techniques inspired by nature and feminine strength.',
-      zh: '采用传统木刻技艺雕刻的胸针，图案灵感来自自然与女性力量。'
+      en: 'A brooch handcrafted with heritage yarn weaving techniques; custom shapes available.',
+      zh: '采用非遗手工编织技艺制作的胸针，可根据形象定制。'
     },
     craft: {
-      en: 'Traditional woodcut carving and printing on sustainably sourced wood.',
-      zh: '在可持续木材上进行传统木刻雕刻与印刷。'
+      en: 'Women artisans weave cotton yarn into intricate floral motifs using traditional crochet techniques.',
+      zh: '女性匠人用传统编织技术将棉线编成精致花样。'
     },
     story: {
-      en: 'Hand carved by a single mother from Hebei who rediscovered independence through craftsmanship.',
-      zh: '由来自河北的单亲妈妈手工雕刻，她通过手艺重拾独立。'
+      en: 'Created by women in Tianjin who learned weaving at Chaoxi and now earn income through custom brooches.',
+      zh: '由在潮汐中心学习编织的天津妇女制作，通过定制胸针获得收入。'
     },
-    donation: 5
+    donation: 6
   },
   {
     id: 2,
-    category: 'Tableware',
-    uses: ['business', 'home'],
-    price: 50,
+    category: 'Accessory',
+    uses: ['business', 'gift'],
+    price: 60,
     image: 'assets/craft2.avif',
     name: {
-      en: 'Handcrafted Wooden Tableware Set',
-      zh: '手工木质餐具套装'
+      en: 'Cloisonné Enamel Brooch',
+      zh: '掐丝珐琅胸针'
     },
     description: {
-      en: 'A set of bowls and spoons made from locally sourced wood, finished with natural oils.',
-      zh: '用本地木材制作的碗和勺子套装，采用天然油剂抛光。'
+      en: 'A vibrant brooch featuring cloisonné enamelling with intricate metalwork and colourful glaze.',
+      zh: '采用掐丝珐琅工艺制作的精致胸针，金属与色彩交织。'
     },
     craft: {
-      en: 'Carved and sanded by artisans using traditional woodworking tools.',
-      zh: '由匠人使用传统木工工具雕刻打磨。'
+      en: 'Artisans bend metal wires into patterns, fill them with enamel and fire to create a shining finish.',
+      zh: '匠人将金属丝掐制成图案，填入釉料并高温烧制，呈现光彩。'
     },
     story: {
-      en: 'Created by women artisans in Guizhou who turned their heritage craft into a livelihood.',
-      zh: '由贵州的女性匠人制作，她们将传统技艺变成了谋生方式。'
+      en: 'Crafted by female artisans from Hebei who combine traditional cloisonné with modern design.',
+      zh: '由河北女性匠人制作，结合传统珐琅与现代设计。'
     },
     donation: 8
   },
   {
     id: 3,
-    category: 'Fan',
-    uses: ['festival', 'business'],
-    price: 40,
+    category: 'Decor',
+    uses: ['gift', 'home'],
+    price: 45,
     image: 'assets/craft3.avif',
     name: {
-      en: 'Bamboo & Silk Hand Fan',
-      zh: '竹丝团扇'
+      en: 'Yarn Flower',
+      zh: '益枝花'
     },
     description: {
-      en: 'A delicate hand fan woven from bamboo and silk, perfect for celebrations and decor.',
-      zh: '由竹子和丝绸编织而成的精美团扇，适合节庆和装饰。'
+      en: 'A handcrafted eternal flower woven from yarn, symbolising hope and support.',
+      zh: '以毛线编织而成的永生花，象征希望与支持。'
     },
     craft: {
-      en: 'Weaving bamboo ribs and silk fabric using heritage techniques.',
-      zh: '采用传统技艺编织竹骨与丝绸。'
+      en: 'Yarn is woven into delicate petals, forming a long‑lasting blossom.',
+      zh: '匠人将毛线编成花瓣，形成持久绽放的花朵。'
     },
     story: {
-      en: 'Handmade by ethnic minority women who preserve ancient weaving traditions.',
-      zh: '由少数民族女性手工编织，传承古老的编织传统。'
+      en: 'Made by women overcoming hardship, these flowers carry their prayers and blessings.',
+      zh: '由克服困难的妇女手工制作，这些花寄托着她们的祝福。'
     },
-    donation: 6
+    donation: 5
+  },
+  {
+    id: 4,
+    category: 'Fan',
+    uses: ['festival', 'decor'],
+    price: 88,
+    image: 'assets/fan.avif',
+    name: {
+      en: 'Heritage Hand Fan',
+      zh: '非遗团扇'
+    },
+    description: {
+      en: 'A hand fan combining bamboo ribs and yarn weaving, representing reunion and harmony.',
+      zh: '结合竹骨与毛线编织的团扇，寓意团圆与和谐。'
+    },
+    craft: {
+      en: 'Women weave bamboo ribs and yarn into a round fan using heritage techniques.',
+      zh: '女性匠人用传统技法编织竹骨和毛线成圆扇。'
+    },
+    story: {
+      en: 'Made in Sichuan by women who preserve intangible heritage through crafts.',
+      zh: '由四川女性制作，她们通过手艺传承非遗文化。'
+    },
+    donation: 7
   }
 ];
 
