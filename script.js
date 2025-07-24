@@ -262,16 +262,16 @@ const stories = [
   {
     title: { en: 'From Survivor to Artisan', zh: '从受助者到匠人' },
     text: {
-      en: 'Lina, once a victim of poverty, learned traditional embroidery and now teaches other women.',
-      zh: '原本深陷贫困的丽娜通过学习传统刺绣改变命运，如今她还教授其他女性。'
+      en: 'Libing, once a victim of poverty, learned traditional embroidery and now teaches other women.',
+      zh: '原本深陷贫困的丽冰通过学习传统刺绣改变命运，如今她还教授其他女性。'
     },
     image: 'assets/craft2.avif'
   },
   {
     title: { en: 'Weaving a Future', zh: '织出新生活' },
     text: {
-      en: 'Ming’s weaving cooperative has created jobs for dozens of rural mothers.',
-      zh: '小明成立的编织合作社为数十位农村妈妈提供了工作机会。'
+      en: 'Xiaohong’s weaving cooperative has created jobs for dozens of rural mothers.',
+      zh: '晓红成立的编织合作社为数十位农村妈妈提供了工作机会。'
     },
     image: 'assets/craft3.avif'
   }
@@ -629,8 +629,6 @@ function refreshDynamicContent() {
   renderProducts();
   // product page
   renderProductDetails();
-  // about page
-  renderAchievements();
   // impact page
   renderImpactStats();
   renderImpactChart();
@@ -659,7 +657,6 @@ document.addEventListener('DOMContentLoaded', () => {
   populateTestimonials();
   renderProducts();
   renderProductDetails();
-  renderAchievements();
   renderImpactStats();
   renderImpactChart();
   renderTrainings();
