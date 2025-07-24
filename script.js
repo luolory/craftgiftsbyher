@@ -59,7 +59,7 @@ const translations = {
     name: 'Name',
     message: 'Message'
     , aboutMissionTitle: 'Our Mission'
-    , aboutMissionText: 'EmpowerHer Crafts is a social enterprise founded by Lory to empower disadvantaged women through heritage crafts. We partner with the Chaoxi Charity Center to sell handmade gifts and reinvest profits into training programmes. Our mission is to inspire Gen Z with stories of resilience and craftsmanship.'
+    , aboutMissionText: 'The Weaving Love Project is a public-interest initiative founded by Lory Luo, using intangible heritage crafts to empower disadvantaged women. We partner with the Chaoxi Charity Center to sell handcrafted gifts made by disadvantaged women, and reinvest profits into women\u2019s entrepreneurship training programmes. Our mission is to inspire Generation Z through stories of craftsmanship, while advancing sustainable philanthropy, female entrepreneurship and the preservation of traditional culture.'
     , aboutChaoxiTitle: 'Chaoxi Charity Center'
     , aboutChaoxiText: 'Chaoxi Charity Center supports women artisans by providing training and resources across multiple provinces.'
     , aboutStoryTitle: 'Stories Behind the Crafts'
@@ -117,7 +117,7 @@ const translations = {
     name: '姓名',
     message: '留言'
     , aboutMissionTitle: '我们的使命'
-    , aboutMissionText: '织爱计划是由Lory创立的社会企业，通过非遗手工艺为弱势女性群体赋能。我们与潮汐公益中心合作售卖手工礼品，并将利润回馈于培训项目。我们的使命是用匠心故事激励Z世代。'
+    , aboutMissionText: '织爱计划是由Lory Luo创立的公益项目，通过非遗手工艺为弱势女性群体赋能。我们与潮汐公益中心合作售卖弱势女性群体制作的手工礼品，并将利润回馈于女性创业培训项目。我们的使命是用匠心故事激励Z世代，推动可持续公益、女性创业精神和传统文化传承。'
     , aboutChaoxiTitle: '潮汐公益中心'
     , aboutChaoxiText: '潮汐公益中心为妇女匠人提供培训和资源，覆盖多个省份。'
     , aboutStoryTitle: '非遗技艺背后的她们'
