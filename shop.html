@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title data-i18n="navShop">Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-XxXf5Z2eKzKMGw5TFO7/XD0y7FPqvFb9uLBPJgJHSbLwYqDhRkCQ0WzSyfNK1vO/NGG+eMlFJY5Z6MfB5p/B3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body class="shop">
+    <header>
+      <div class="nav-container">
+        <a href="index.html" class="site-logo"><i class="fa-solid fa-yarn-ball"></i><span data-i18n="siteName">EmpowerHer Crafts</span></a>
+        <nav class="nav-links">
+          <a href="index.html" data-i18n="navHome">Home</a>
+          <a href="shop.html" class="active" data-i18n="navShop">Shop</a>
+          <a href="about.html" data-i18n="navAbout">About Us</a>
+          <a href="impact.html" data-i18n="navImpact">Impact</a>
+          <a href="empower.html" data-i18n="navEmpower">EmpowerHer</a>
+          <a href="contact.html" data-i18n="navContact">Contact</a>
+          <a href="account.html" data-i18n="navAccount">My Account</a>
+        </nav>
+        <div class="lang-switch">
+          <button data-lang="zh">中文</button>
+          <button data-lang="en">EN</button>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <h1 data-i18n="navShop">Shop</h1>
+      <!-- Filter controls -->
+      <div class="filters">
+        <div>
+          <label for="filter-category" data-i18n="filterCategory">Category</label>
+          <select id="filter-category"></select>
+        </div>
+        <div id="filter-use-container-wrapper">
+          <span data-i18n="filterUse">Use</span>
+          <div id="filter-use-container" style="display:inline-block; margin-left:0.5rem;"></div>
+        </div>
+        <div>
+          <label for="filter-price" data-i18n="filterMaxPrice">Max price</label>
+          <input type="range" id="filter-price" min="0" max="100" value="100" step="10">
+          <span id="price-display">100</span>
+        </div>
+      </div>
+      <!-- Product list -->
+      <div id="product-list" class="product-grid"></div>
+    </main>
+    <footer>
+      <p>&copy; 2025 <span data-i18n="siteName">EmpowerHer Crafts</span>. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      // update price display when slider moves
+      const priceInput = document.getElementById('filter-price');
+      const priceDisplay = document.getElementById('price-display');
+      priceInput?.addEventListener('input', () => {
+        priceDisplay.textContent = priceInput.value;
+      });
+    </script>
+  </body>
+</html>

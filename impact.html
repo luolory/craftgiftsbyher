@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title data-i18n="navImpact">Impact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-XxXf5Z2eKzKMGw5TFO7/XD0y7FPqvFb9uLBPJgJHSbLwYqDhRkCQ0WzSyfNK1vO/NGG+eMlFJY5Z6MfB5p/B3A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body class="impact">
+    <header>
+      <div class="nav-container">
+        <a href="index.html" class="site-logo"><i class="fa-solid fa-yarn-ball"></i><span data-i18n="siteName">EmpowerHer Crafts</span></a>
+        <nav class="nav-links">
+          <a href="index.html" data-i18n="navHome">Home</a>
+          <a href="shop.html" data-i18n="navShop">Shop</a>
+          <a href="about.html" data-i18n="navAbout">About Us</a>
+          <a href="impact.html" class="active" data-i18n="navImpact">Impact</a>
+          <a href="empower.html" data-i18n="navEmpower">EmpowerHer</a>
+          <a href="contact.html" data-i18n="navContact">Contact</a>
+          <a href="account.html" data-i18n="navAccount">My Account</a>
+        </nav>
+        <div class="lang-switch">
+          <button data-lang="zh">中文</button>
+          <button data-lang="en">EN</button>
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <h1 data-i18n="impactTitle">Our Impact</h1>
+      <p data-i18n="impactSubtitle">Measuring the change we make together</p>
+      <!-- Overview cards -->
+      <div class="impact-overview">
+        <div class="impact-card" id="people-supported">
+          <h3>0</h3>
+          <p data-i18n="peopleSupported">People Supported</p>
+        </div>
+        <div class="impact-card" id="items-sold">
+          <h3>0</h3>
+          <p data-i18n="itemsSold">Items Sold</p>
+        </div>
+        <div class="impact-card" id="regions-covered">
+          <h3>0</h3>
+          <p data-i18n="regionsCovered">Regions Reached</p>
+        </div>
+      </div>
+      <!-- Chart -->
+      <div class="chart-container">
+        <canvas id="impact-chart" width="600" height="400"></canvas>
+      </div>
+      <!-- Plans and donation -->
+      <section class="about-section">
+        <h2 data-i18n="impactPlanTitle">Buy One Donate One</h2>
+        <p data-i18n="impactPlanText">For every item purchased we donate a portion...</p>
+      </section>
+      <section class="about-section">
+        <h2 data-i18n="impactDonationTitle">Donation Flow</h2>
+        <p data-i18n="impactDonationText">10% of product price goes toward training programmes...</p>
+      </section>
+      <section class="about-section">
+        <h2 data-i18n="impactTrainTitle">Train a Craftswoman</h2>
+        <p data-i18n="impactTrainText">Your contribution helps us fund classes...</p>
+        <a href="#" class="cta" style="display:inline-block;padding:0.6rem 1.2rem;background-color:var(--color-highlight);color:#fff;border-radius:20px;transition:filter 0.2s;" data-i18n="donateButton">Donate now</a>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 <span data-i18n="siteName">EmpowerHer Crafts</span>. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
