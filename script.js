@@ -16,9 +16,11 @@
 const translations = {
   en: {
     siteName: 'EmpowerHer Crafts',
-    tagline: 'Light up lives with craftsmanship',
-    buyNow: 'Shop now',
-    supportThem: 'Support them',
+    // Updated hero tagline to better reflect heritage crafts mission
+    tagline: 'Heritage crafts: tradition and hope',
+    // Updated call‑to‑action labels for clarity
+    buyNow: 'Explore gifts',
+    supportThem: 'Support women',
     navHome: 'Home',
     navShop: 'Shop',
     navAbout: 'About Us',
@@ -72,9 +74,11 @@ const translations = {
   },
   zh: {
     siteName: '织爱计划',
-    tagline: '用手艺点亮人生',
-    buyNow: '立即购买',
-    supportThem: '支持她们',
+    // 更新主视觉标语以突出非遗手作和传承希望
+    tagline: '非遗手作：传承与希望',
+    // 更新行动按钮文案以更贴合购买和支持女性
+    buyNow: '选购礼品',
+    supportThem: '支持女性',
     navHome: '首页',
     navShop: '礼品商店',
     navAbout: '品牌理念',
