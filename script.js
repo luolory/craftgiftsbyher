@@ -211,7 +211,8 @@ const products = [
     category: 'Accessory',
     uses: ['business', 'gift'],
     price: 60,
-    image: 'assets/craft2.avif',
+    // Updated image to cloisonné enamel brooch from Wikimedia Commons
+    image: 'assets/cloisonne.jpg',
     name: {
       en: 'Cloisonné Enamel Brooch',
       zh: '掐丝珐琅胸针'
@@ -235,7 +236,8 @@ const products = [
     category: 'Decor',
     uses: ['gift', 'home'],
     price: 45,
-    image: 'assets/craft3.avif',
+    // Updated image to yarn flower photo from Wikimedia Commons
+    image: 'assets/yarnflower.jpg',
     name: {
       en: 'Yarn Flower',
       zh: '益枝花'
