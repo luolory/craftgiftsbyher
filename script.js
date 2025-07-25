@@ -40,6 +40,8 @@ const translations = {
     craftTechnique: 'Craft technique',
     donationMessage: 'With each purchase you donate',
     currencyUnit: 'USD',
+    // Label for product detail link instead of purchase
+    viewDetails: 'Learn more',
     impactTitle: 'Our Impact',
     impactSubtitle: 'Measuring the change we make together',
     peopleSupported: 'People Supported',
@@ -98,6 +100,8 @@ const translations = {
     craftTechnique: '工艺说明',
     donationMessage: '每件商品购买将捐赠',
     currencyUnit: '元',
+    // Label for product detail link instead of purchase
+    viewDetails: '查看详情',
     impactTitle: '我们的影响力',
     impactSubtitle: '衡量我们共同创造的改变',
     peopleSupported: '受助人数',
@@ -187,22 +191,24 @@ const products = [
     category: 'Accessory',
     uses: ['festival', 'business'],
     price: 35,
-    image: 'assets/craft1.avif',
+    // Updated image to Tianjin‑style yarn weaving disc (replaced with new weaving image)
+    image: 'assets/weaving2.jpg',
     name: {
-      en: 'Yarn Woven Brooch',
-      zh: '津派毛线手工编织胸针'
+      en: 'Tianjin Yarn Weaving',
+      zh: '津派毛线手工编织'
     },
+    // New description emphasising Haihe culture and intangible heritage
     description: {
-      en: 'A brooch handcrafted with heritage yarn weaving techniques; custom shapes available.',
-      zh: '采用非遗手工编织技艺制作的胸针，可根据形象定制。'
+      en: 'Stitches carry Haihe’s sentiment — Tianjin‑style yarn weaving blends northern folk art and port city spirit. Each stitch carries life’s wisdom. With heritage craftsmanship and heartfelt handiwork, it weaves warmth and conveys blessings.',
+      zh: '针尖上的海河情\n——津派毛线编织\n津 派 编 织 ， 融 北 方 民 艺 与 港 城 气 韵 ，\n一 针 一 线 承 载 生 活 智 慧 ，\n非 遗 传 承 ， 匠 心 手 作 ，\n织 就 温 暖 ， 寄 寓 美 好 。'
     },
     craft: {
-      en: 'Women artisans weave cotton yarn into intricate floral motifs using traditional crochet techniques.',
-      zh: '女性匠人用传统编织技术将棉线编成精致花样。'
+      en: 'Tianjin artisans weave yarn into intricate patterns, blending folk art with port city spirit. Every stitch embodies life’s wisdom.',
+      zh: '津派匠人将毛线编织成精美图案，融汇民间艺术与港城气韵，一针一线体现生活智慧。'
     },
     story: {
-      en: 'Created by women in Tianjin who learned weaving at Chaoxi and now earn income through custom brooches.',
-      zh: '由在潮汐中心学习编织的天津妇女制作，通过定制胸针获得收入。'
+      en: 'Crafted by women in Tianjin using heritage weaving techniques, these pieces carry warmth and blessings.',
+      zh: '由天津女性运用非遗编织技艺制作，每件作品寄托着温暖与祝福。'
     },
     donation: 6
   },
@@ -211,23 +217,23 @@ const products = [
     category: 'Accessory',
     uses: ['business', 'gift'],
     price: 60,
-    // Updated image to cloisonné enamel brooch from Wikimedia Commons
-    image: 'assets/cloisonne.jpg',
+    // Updated image to high‑quality cloisonné brooch (replaced with new cloisonné photo)
+    image: 'assets/cloisonne2.jpg',
     name: {
       en: 'Cloisonné Enamel Brooch',
       zh: '掐丝珐琅胸针'
     },
     description: {
-      en: 'A vibrant brooch featuring cloisonné enamelling with intricate metalwork and colourful glaze.',
-      zh: '采用掐丝珐琅工艺制作的精致胸针，金属与色彩交织。'
+      en: 'A splendid dance of metal and colour — cloisonné enamel brooch. Cloisonné, formally named copper‑body filigree enamel and also known as inlaid enamel, is an ancient Chinese craft with deep cultural heritage.',
+      zh: '金属与色彩的华丽舞蹈\n——掐丝珐琅胸针\n掐 丝 珐 琅 ， 正 名 为 铜 胎 掐 丝 珐 琅 ，\n俗 名 珐 蓝 ， 又 称 嵌 珐 琅 ， 是 一 种\n具 有 悠 久 历 史 和 深 厚 文 化 底 蕴 的\n中 国 传 统 工 艺 品 。'
     },
     craft: {
-      en: 'Artisans bend metal wires into patterns, fill them with enamel and fire to create a shining finish.',
-      zh: '匠人将金属丝掐制成图案，填入釉料并高温烧制，呈现光彩。'
+      en: 'Metal wires are bent into intricate patterns and filled with colourful enamel before firing, creating a dazzling finish.',
+      zh: '金属丝掐制成精美图案，填入五彩釉料，经高温烧制呈现绚丽光彩。'
     },
     story: {
-      en: 'Crafted by female artisans from Hebei who combine traditional cloisonné with modern design.',
-      zh: '由河北女性匠人制作，结合传统珐琅与现代设计。'
+      en: 'These brooches are handmade by women artisans who preserve cloisonné techniques passed down for centuries.',
+      zh: '这些胸针由传承百年掐丝珐琅技艺的女匠人手工制作。'
     },
     donation: 8
   },
@@ -236,23 +242,23 @@ const products = [
     category: 'Decor',
     uses: ['gift', 'home'],
     price: 45,
-    // Updated image to yarn flower photo from Wikimedia Commons
-    image: 'assets/yarnflower.jpg',
+    // Updated image to thread‑wrapped flower (Chan Hua) (replaced with new Chan Hua image)
+    image: 'assets/chanflower.jpg',
     name: {
-      en: 'Yarn Flower',
-      zh: '益枝花'
+      en: 'Thread‑Wrapped Flower',
+      zh: '非遗技法缠花'
     },
     description: {
-      en: 'A handcrafted eternal flower woven from yarn, symbolising hope and support.',
-      zh: '以毛线编织而成的永生花，象征希望与支持。'
+      en: 'The flamboyant bloom of silk threads — intangible heritage threading flowers. Chan Hua flourished in the Qing dynasty: a cardboard base is used, silk threads are wound and fixed with copper wire. Recognised as national intangible cultural heritage, its exquisite patterns symbolise a bright future, abundance and blessings.',
+      zh: '丝线的绚烂绽放\n——非遗技法缠花\n缠 花 盛 于 清 代 ， 以 纸 板 作 为 坯 架 ，\n丝 线 缠 绕 ， 铜 丝 固 定 ， 是 国 家 非\n物 质 文 化 遗 产 。 非 遗 缠 花 的 精 美\n图 案 寓 示 着 前 途 似 锦 、 吉 庆 有 余 、\n有 福 有 禄 等 含 义 。'
     },
     craft: {
-      en: 'Yarn is woven into delicate petals, forming a long‑lasting blossom.',
-      zh: '匠人将毛线编成花瓣，形成持久绽放的花朵。'
+      en: 'Silk threads are wound around a cardboard form and fixed with copper wire, forming elaborate floral patterns.',
+      zh: '以纸板为坯架，丝线缠绕并用铜丝固定，形成精美花样。'
     },
     story: {
-      en: 'Made by women overcoming hardship, these flowers carry their prayers and blessings.',
-      zh: '由克服困难的妇女手工制作，这些花寄托着她们的祝福。'
+      en: 'Modern women artisans revive the traditional art of Chan Hua to convey wishes of hope and prosperity.',
+      zh: '现代女性匠人重现缠花传统技艺，寓意希望与繁荣。'
     },
     donation: 5
   },
@@ -378,8 +384,7 @@ function populateFeaturedProducts() {
       <div class="card-body">
         <h3>${product.name[lang]}</h3>
         <p>${product.description[lang]}</p>
-        <span class="price">${translations[lang].priceLabel} ${product.price} ${translations[lang].currencyUnit}</span>
-        <a href="product.html?id=${product.id}">${translations[lang].buyNow}</a>
+        <a href="product.html?id=${product.id}">${translations[lang].viewDetails}</a>
       </div>
     `;
     container.appendChild(card);
@@ -461,8 +466,7 @@ function renderProducts() {
       <div class="card-body">
         <h3>${product.name[lang]}</h3>
         <p>${product.description[lang]}</p>
-        <span class="price">${translations[lang].priceLabel} ${product.price} ${translations[lang].currencyUnit}</span>
-        <a href="product.html?id=${product.id}">${translations[lang].buyNow}</a>
+        <a href="product.html?id=${product.id}">${translations[lang].viewDetails}</a>
       </div>
     `;
     container.appendChild(card);
@@ -520,8 +524,7 @@ function renderProductDetails() {
         <p>${product.craft[lang]}</p>
         <h3>${translations[lang].donationMessage} ${product.donation} ${translations[lang].currencyUnit}</h3>
         <p>${product.story[lang]}</p>
-        <span class="price">${translations[lang].priceLabel} ${product.price} ${translations[lang].currencyUnit}</span>
-        <button onclick="alert('Added to cart!')">${translations[lang].buyNow}</button>
+    <!-- Price and purchase button removed as per updated design -->
       </div>
     </div>
   `;
