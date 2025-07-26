@@ -267,22 +267,24 @@ const products = [
     category: 'Fan',
     uses: ['festival', 'decor'],
     price: 88,
-    image: 'assets/fan.avif',
+    // Updated image to user‑provided Jiangnan style heritage fan (tuanshan)
+    image: 'assets/tuanshan.jpg',
     name: {
       en: 'Heritage Hand Fan',
       zh: '非遗团扇'
     },
     description: {
-      en: 'A hand fan combining bamboo ribs and yarn weaving, representing reunion and harmony.',
-      zh: '结合竹骨与毛线编织的团扇，寓意团圆与和谐。'
+      // Updated description to poetic lines about the Jiangnan breeze
+      en: 'Jiangnan breeze swaying in your palm — intangible heritage fan. This light fan gathers the essence of bamboo, wood and silk; each face depicts poetic elegance. With cultural heritage and exquisite craftsmanship, it sways gently in the breeze, symbolising reunion and harmony.',
+      zh: '掌中摇曳江南风\n——非遗团扇\n团 扇 轻 盈 ， 聚 竹 木 绢 丝 之 灵 秀 ，\n一 柄 一 面 绘 尽 诗 书 雅 意 ，\n非 遗 风 骨 ， 匠 心 独 运 ，\n摇 曳 清 风 ， 寄 寓 团 圆 。'
     },
     craft: {
-      en: 'Women weave bamboo ribs and yarn into a round fan using heritage techniques.',
-      zh: '女性匠人用传统技法编织竹骨和毛线成圆扇。'
+      en: 'Artisans craft delicate fans by combining bamboo, wood and silk fabrics using intangible heritage techniques.',
+      zh: '匠人以竹骨、木柄和绢丝结合，运用非遗工艺制作精美团扇。'
     },
     story: {
-      en: 'Made in Sichuan by women who preserve intangible heritage through crafts.',
-      zh: '由四川女性制作，她们通过手艺传承非遗文化。'
+      en: 'Created by women artisans who preserve the heritage of traditional fan‑making, these fans carry wishes of reunion.',
+      zh: '由女匠人传承传统制扇技艺制成的团扇，承载着团圆的祝福。'
     },
     donation: 7
   }
@@ -384,7 +386,7 @@ function populateFeaturedProducts() {
       <div class="card-body">
         <h3>${product.name[lang]}</h3>
         <p>${product.description[lang]}</p>
-        <a href="product.html?id=${product.id}">${translations[lang].viewDetails}</a>
+        <!-- Detail link removed as products have no dedicated page -->
       </div>
     `;
     container.appendChild(card);
@@ -466,7 +468,7 @@ function renderProducts() {
       <div class="card-body">
         <h3>${product.name[lang]}</h3>
         <p>${product.description[lang]}</p>
-        <a href="product.html?id=${product.id}">${translations[lang].viewDetails}</a>
+        <!-- Detail link removed -->
       </div>
     `;
     container.appendChild(card);
