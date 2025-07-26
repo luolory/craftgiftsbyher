@@ -32,8 +32,6 @@ html, body {
   color: var(--color-text);
 }
 
-
-
 a {
   color: inherit;
   text-decoration: none;
@@ -65,8 +63,6 @@ header {
 }
 
 .site-logo {
-
-  
   font-weight: 700;
   font-size: 1.4rem;
   color: var(--color-highlight);
@@ -98,7 +94,6 @@ header {
 .lang-switch {
   display: flex;
   gap: 0.5rem;
-  
   align-items: center;
 }
 
@@ -127,7 +122,8 @@ header {
 /* Hero section */
 .hero {
   position: relative;
-  background-image: url('assets/hero-bg.png');
+  /* Use new blue‑green weaving‑inspired background that coordinates with product images */
+  background-image: url('assets/banner-coord3.jpg');
   background-size: cover;
   background-position: center;
   color: #422c2b;
@@ -537,9 +533,4 @@ footer {
   text-align: center;
   font-size: 0.8rem;
   color: var(--color-light-text);
-}
-
-/* Override hero background */
-.hero {
-  background-image: url('assets/hero-bg2.png');
 }
