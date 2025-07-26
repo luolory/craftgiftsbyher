@@ -123,7 +123,8 @@ header {
 .hero {
   position: relative;
   /* Use new blue‑green weaving‑inspired background that coordinates with product images */
-  background-image: url('assets/banner-coord3.jpg');
+  /* Updated hero background to coordinate with product images using original texture */
+  background-image: url('assets/banner-coord4.jpg');
   background-size: cover;
   background-position: center;
   color: #422c2b;
