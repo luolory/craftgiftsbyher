@@ -73,6 +73,11 @@ const translations = {
     , impactTrainTitle: 'Train a Craftswoman'
     , impactTrainText: 'Your contribution helps us fund classes and materials for women entering the programme.'
     , empowerIntro: 'Through our EmpowerHer programme, founder Lory encourages women entrepreneurs by linking traditional crafts with new media. Join our workshops and unlock your potential.'
+    , story1Title: 'From Survivor to Artisan'
+    , story1Content: 'Libing once lived in poverty, feeling no light ahead. By chance she joined a traditional embroidery workshop run by a charity. At first her hands trembled as she held the needle, but she refused to give up. She painstakingly unpicked and re‑stitched her work, practising stitch by stitch until she understood the intricacy of this ancient craft. The small income from her embroidery helped her support herself, but more importantly it restored her confidence and sense of dignity. Today Libing is known in her community as a skilled artisan. She uses her evenings to run small classes where she patiently teaches other women, sharing the techniques and experiences she has gained. Her journey from aid recipient to artisan shows how craftsmanship can change a life; she hopes to kindle the same hope in others.'
+    , story2Title: 'Weaving a Future'
+    , story2Content: 'Xiaohong always dreamed of giving back to her village. After years of working away from home, she returned with a vision: to create a weaving cooperative where mothers could earn a living without leaving their families. Starting with just a couple of looms and her own skills, she invited women from surrounding farms to learn. Many were hesitant at first, but Xiaohong’s patience and encouragement helped them master the basics. Soon the cooperative began producing beautiful woven products sold both locally and online. As orders grew, more women joined, bringing laughter and camaraderie back into the community. For Xiaohong, success was not only measured in income but in the smiles of mothers who could now support their children’s education and stay close to home. Her weaving cooperative has become a beacon of hope, proving that when women support each other, they can weave a new life together.'
+    , backToStories: 'Back to Stories'
   },
   zh: {
     siteName: '织爱计划',
@@ -133,6 +138,11 @@ const translations = {
     , impactTrainTitle: '资助一位手艺人'
     , impactTrainText: '你的捐助将帮助我们为参与项目的女性提供课程和材料。'
     , empowerIntro: '通过我们的创业支持项目，创始人Lory鼓励女性将传统技艺与新媒体结合，开启创业之路。欢迎参加我们的课程，释放你的潜力。'
+    , story1Title: '从受助者到匠人'
+    , story1Content: '丽冰曾深陷贫困，生活的重担让她一度看不到前方的光亮。一次偶然的机会，她参加了公益组织开设的传统刺绣培训班，最初握针的手颤抖不已，但她没有退缩。一次次拆线重绣，一针一线地练习，她渐渐领悟了这门古老技艺的精妙。刺绣带来的微薄收入让她可以维持生计，更重要的是让她重新找回了自信和尊严。如今的丽冰已经成长为社区公认的巧手匠人，她利用晚上的时间开办小课堂，耐心指导其他女性学习刺绣，将自己掌握的技巧和经历分享给她们。从受助者到匠人，她用手艺改变了自己的命运，也希望用温柔的力量为更多人点燃希望。'
+    , story2Title: '织出新生活'
+    , story2Content: '晓红一直梦想着回馈自己的家乡。在外打工多年后，她带着一个愿景回来：成立一个编织合作社，让妈妈们在不离开家庭的情况下就能谋生。她用仅有的几台织机和自己掌握的技能起步，邀请附近的农家妇女来学习。刚开始许多女性犹豫不决，是晓红耐心的指导和鼓励让她们掌握了基本功。很快，合作社开始生产精美的编织产品，并通过当地集市和线上渠道销售。随着订单增加，越来越多的女性加入，合作社里又响起欢声笑语。对晓红来说，成功不仅体现在收入增长，更在于那些母亲的笑容——她们既能养家糊口，又能陪伴孩子成长。她创办的编织合作社已经成为希望的灯塔，证明女性互助可以一起织出新生活。'
+    , backToStories: '返回故事列表'
   }
 };
 
@@ -292,22 +302,29 @@ const products = [
 
 // Stories for the home page (short philanthropic narratives).  These
 // mirror the goal of sharing artisans’ experiences【407956085884721†L27-L30】.
+// Detailed stories for the home page.
+// Each story includes a title, long narrative text in both languages,
+// an image that matches the story theme and site colour palette, and
+// a link to a dedicated story detail page.  These narratives emphasise
+// how craftsmanship empowers women and communities.
 const stories = [
   {
     title: { en: 'From Survivor to Artisan', zh: '从受助者到匠人' },
     text: {
-      en: 'Libing, once a victim of poverty, learned traditional embroidery and now teaches other women.',
-      zh: '原本深陷贫困的丽冰通过学习传统刺绣改变命运，如今她还教授其他女性。'
+      en: `Libing once lived in poverty, feeling no light ahead. By chance she joined a traditional embroidery workshop run by a charity. At first her hands trembled as she held the needle, but she refused to give up. She painstakingly unpicked and re‑stitched her work, practising stitch by stitch until she understood the intricacy of this ancient craft. The small income from her embroidery helped her support herself, but more importantly it restored her confidence and sense of dignity. Today Libing is known in her community as a skilled artisan. She uses her evenings to run small classes where she patiently teaches other women, sharing the techniques and experiences she has gained. Her journey from aid recipient to artisan shows how craftsmanship can change a life; she hopes to kindle the same hope in others.`,
+      zh: `丽冰曾深陷贫困，生活的重担让她一度看不到前方的光亮。一次偶然的机会，她参加了公益组织开设的传统刺绣培训班，最初握针的手颤抖不已，但她没有退缩。一次次拆线重绣，一针一线地练习，她渐渐领悟了这门古老技艺的精妙。刺绣带来的微薄收入让她可以维持生计，更重要的是让她重新找回了自信和尊严。如今的丽冰已经成长为社区公认的巧手匠人，她利用晚上的时间开办小课堂，耐心指导其他女性学习刺绣，将自己掌握的技巧和经历分享给她们。从受助者到匠人，她用手艺改变了自己的命运，也希望用温柔的力量为更多人点燃希望。`
     },
-    image: 'assets/craft2.avif'
+    image: 'assets/story1.jpg',
+    link: 'story1.html'
   },
   {
     title: { en: 'Weaving a Future', zh: '织出新生活' },
     text: {
-      en: 'Xiaohong’s weaving cooperative has created jobs for dozens of rural mothers.',
-      zh: '晓红成立的编织合作社为数十位农村妈妈提供了工作机会。'
+      en: `Xiaohong always dreamed of giving back to her village. After years of working away from home, she returned with a vision: to create a weaving cooperative where mothers could earn a living without leaving their families. Starting with just a couple of looms and her own skills, she invited women from surrounding farms to learn. Many were hesitant at first, but Xiaohong’s patience and encouragement helped them master the basics. Soon the cooperative began producing beautiful woven products sold both locally and online. As orders grew, more women joined, bringing laughter and camaraderie back into the community. For Xiaohong, success was not only measured in income but in the smiles of mothers who could now support their children’s education and stay close to home. Her weaving cooperative has become a beacon of hope, proving that when women support each other, they can weave a new life together.`,
+      zh: `晓红一直梦想着回馈自己的家乡。在外打工多年后，她带着一个愿景回来：成立一个编织合作社，让妈妈们在不离开家庭的情况下就能谋生。她用仅有的几台织机和自己掌握的技能起步，邀请附近的农家妇女来学习。刚开始许多女性犹豫不决，是晓红耐心的指导和鼓励让她们掌握了基本功。很快，合作社开始生产精美的编织产品，并通过当地集市和线上渠道销售。随着订单增加，越来越多的女性加入，合作社里又响起欢声笑语。对晓红来说，成功不仅体现在收入增长，更在于那些母亲的笑容——她们既能养家糊口，又能陪伴孩子成长。她创办的编织合作社已经成为希望的灯塔，证明女性互助可以一起织出新生活。`
     },
-    image: 'assets/craft3.avif'
+    image: 'assets/story2.jpg',
+    link: 'story2.html'
   }
 ];
 
@@ -402,16 +419,18 @@ function populateStories() {
   container.innerHTML = '';
   const lang = getCurrentLang();
   stories.forEach(story => {
-    const card = document.createElement('div');
-    card.className = 'story-card';
-    card.innerHTML = `
+    // Wrap each card in an anchor so the entire card is clickable.
+    const link = document.createElement('a');
+    link.href = story.link || '#';
+    link.className = 'story-card';
+    link.innerHTML = `
       <img src="${story.image}" alt="${story.title[lang]}">
       <div class="card-body">
         <h4>${story.title[lang]}</h4>
         <p>${story.text[lang]}</p>
       </div>
     `;
-    container.appendChild(card);
+    container.appendChild(link);
   });
 }
 
