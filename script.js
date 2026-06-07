@@ -434,9 +434,9 @@ function populateFeaturedProducts() {
   if (!container) return;
   container.innerHTML = '';
   const lang = getCurrentLang();
-  prodcts.slice(0, 3).forEch(product => {
+  products.slice(0, 4).forEach(product => {
     const card = document.createElement('div');
-    card.className = 'product-card';
+  
     card.innerHTML = `
       <img src="${product.image}" alt="${product.name[lang]}">
       <div class="card-body">
