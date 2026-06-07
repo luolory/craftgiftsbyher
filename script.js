@@ -196,6 +196,31 @@ function updateLang() {
  * English fields.  For a real site these would be loaded from a
  * backend or CMS. */
 const products = [
+    {
+    id: 5,
+    category: 'Stationery',
+    uses: ['office', 'gift'],
+    price: 46,
+    image: 'assets/daipaper.jpg',
+    name: {
+      en: 'Dai Handmade Paper',
+      zh: '傣纸产品'
+    },
+    description: {
+      en: 'Rustic aroma of paper and a time journal — Dai handmade paper. Dai paper is a national intangible heritage craft made from mulberry bark through 11 hand-crafted steps, chemical-free, environmentally friendly and biodegradable. It has an ancient texture and natural warmth, embodying a dialogue between history and nature.',
+      zh: '掌中纸香，时光手札——傣纸手工纸。傣纸以天然构树皮为原料，经11道纯手工工序制成，无化学添加，天然环保，可自然降解。质感古朴，带着自然纹理与温润触感，承载着历史与自然的对话。'
+    },
+    craft: {
+      en: 'Artisans soak mulberry bark, pulp it and spread it in frames, sun-dry to produce sturdy paper using 11 steps; no chemicals are used.',
+      zh: '匠人浸泡构树皮、捣浆抄纸、晾晒等11道工序，用古法制作出厚薄均匀、质地坚韧的傣纸，全程不使用化学试剂。'
+    },
+    story: {
+      en: 'In Yunnan’s Manzhao Village, young Yu Kangkan returned home to revive the ancient craft of making Dai paper with villagers. Despite challenges like weather and transport, they insisted on traditional methods and unified quality to produce durable, eco-friendly paper that continues the craft in a modern way.',
+      zh: '在云南西双版纳曼召村，九零后青年玉康坎放弃城里工作，带领乡亲守护古老的傣纸技艺。虽然造纸依赖阳光、村里交通不便，但他们坚持古法制作、统一标准，做出厚度均匀、质地坚韧的傣纸，将这一环保技艺以全新的方式传承下去。'
+    },
+    donation: 6
+  },
+
   {
     id: 1,
     category: 'Accessory',
