@@ -1,4 +1,5 @@
 /*
+
  * Global JavaScript for EmpowerHer Crafts website.
  *
  * This file defines translation data and helper functions to
@@ -35,6 +36,7 @@ const translations = {
     filterCategory: 'Category',
     filterUse: 'Use',
     filterMaxPrice: 'Max price',
+    
     noProducts: 'No products match your criteria.',
     detailsTitle: 'Details',
     craftTechnique: 'Craft technique',
@@ -69,6 +71,7 @@ const translations = {
     , impactPlanTitle: 'Buy One Donate One'
     , impactPlanText: 'For every item purchased we donate a portion of the proceeds to train new women artisans.'
     , impactDonationTitle: 'Donation Flow'
+
     , impactDonationText: '10% of product price goes toward training programmes and resources.'
     , impactTrainTitle: 'Train a Craftswoman'
     , impactTrainText: 'Your contribution helps us fund classes and materials for women entering the programme.'
@@ -103,7 +106,8 @@ const translations = {
     noProducts: '没有符合条件的商品。',
     detailsTitle: '产品详情',
     craftTechnique: '工艺说明',
-    donationMessage: '每件商品购买将捐赠',
+    d
+      onationMessage: '每件商品购买将捐赠',
     currencyUnit: '元',
     // Label for product detail link instead of purchase
     viewDetails: '查看详情',
@@ -137,7 +141,8 @@ const translations = {
     , impactDonationText: '商品售价的10%将用于培训项目和资源。'
     , impactTrainTitle: '资助一位手艺人'
     , impactTrainText: '你的捐助将帮助我们为参与项目的女性提供课程和材料。'
-    , empowerIntro: '通过我们的创业支持项目，创始人Lory鼓励女性将传统技艺与新媒体结合，开启创业之路。欢迎参加我们的课程，释放你的潜力。'
+    , e
+      mpowerIntro: '通过我们的创业支持项目，创始人Lory鼓励女性将传统技艺与新媒体结合，开启创业之路。欢迎参加我们的课程，释放你的潜力。'
     , story1Title: '从受助者到匠人'
     , story1Content: '丽冰曾深陷贫困，生活的重担让她一度看不到前方的光亮。一次偶然的机会，她参加了公益组织开设的传统刺绣培训班，最初握针的手颤抖不已，但她没有退缩。一次次拆线重绣，一针一线地练习，她渐渐领悟了这门古老技艺的精妙。刺绣带来的微薄收入让她可以维持生计，更重要的是让她重新找回了自信和尊严。如今的丽冰已经成长为社区公认的巧手匠人，她利用晚上的时间开办小课堂，耐心指导其他女性学习刺绣，将自己掌握的技巧和经历分享给她们。从受助者到匠人，她用手艺改变了自己的命运，也希望用温柔的力量为更多人点燃希望。'
     , story2Title: '织出新生活'
@@ -171,7 +176,8 @@ function setLang(lang) {
  * translation in the translations object.  Elements without a
  * matching translation remain unchanged.
  */
-function updateLang() {
+functio
+  n updateLang() {
   const lang = getCurrentLang();
   document.documentElement.lang = lang;
   // update active state on language buttons
@@ -205,6 +211,7 @@ const products = [
     name: {
       en: 'Dai Handmade Paper',
       zh: '傣纸产品'
+   
     },
     description: {
       en: 'Rustic aroma of paper and a time journal — Dai handmade paper. Dai paper is a national intangible heritage craft made from mulberry bark through 11 hand-crafted steps, chemical-free, environmentally friendly and biodegradable. It has an ancient texture and natural warmth, embodying a dialogue between history and nature.',
@@ -239,6 +246,7 @@ const products = [
     },
     craft: {
       en: 'Tianjin artisans weave yarn into intricate patterns, blending folk art with port city spirit. Every stitch embodies life’s wisdom.',
+     
       zh: '津派匠人将毛线编织成精美图案，融汇民间艺术与港城气韵，一针一线体现生活智慧。'
     },
     story: {
@@ -273,7 +281,9 @@ const products = [
     donation: 8
   },
   {
-    id: 3,
+    id:
+      
+      3,
     category: 'Decor',
     uses: ['gift', 'home'],
     price: 45,
@@ -308,6 +318,7 @@ const products = [
       en: 'Heritage Hand Fan',
       zh: '非遗团扇'
     },
+    
     description: {
       // Updated description to poetic lines about the Jiangnan breeze
       en: 'Jiangnan breeze swaying in your palm — intangible heritage fan. This light fan gathers the essence of bamboo, wood and silk; each face depicts poetic elegance. With cultural heritage and exquisite craftsmanship, it sways gently in the breeze, symbolising reunion and harmony.',
@@ -342,6 +353,7 @@ const stories = [
     image: 'assets/story1.jpg',
     link: 'story1.html'
   },
+
   {
     title: { en: 'Weaving a Future', zh: '织出新生活' },
     text: {
@@ -376,7 +388,8 @@ const testimonials = [
 // Impact statistics for the Impact page.  These numbers could be
 // fetched from a backend in a real application.  Here we provide
 // sample values.
-const impactStats = {
+con
+  st impactStats = {
   peopleSupported: 320,
   itemsSold: 850,
   regionsCovered: 15
@@ -411,6 +424,7 @@ const trainings = [
 ];
 
 /**
+
  * Populate the featured products section on the home page.  This
  * function selects the first few items from the products array and
  * renders them as cards.  The number of items shown can be adjusted.
@@ -420,7 +434,7 @@ function populateFeaturedProducts() {
   if (!container) return;
   container.innerHTML = '';
   const lang = getCurrentLang();
-  products.slice(0, 3).forEach(product => {
+  prodcts.slice(0, 3).forEch(product => {
     const card = document.createElement('div');
     card.className = 'product-card';
     card.innerHTML = `
