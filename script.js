@@ -1,5 +1,4 @@
 /*
-
  * Global JavaScript for EmpowerHer Crafts website.
  *
  * This file defines translation data and helper functions to
@@ -17,9 +16,7 @@
 const translations = {
   en: {
     siteName: 'EmpowerHer Crafts',
-    // Updated hero tagline to better reflect heritage crafts mission
     tagline: 'Heritage crafts: tradition and hope',
-    // Updated call‑to‑action labels for clarity
     buyNow: 'Explore gifts',
     supportThem: 'Support women',
     navHome: 'Home',
@@ -36,13 +33,11 @@ const translations = {
     filterCategory: 'Category',
     filterUse: 'Use',
     filterMaxPrice: 'Max price',
-    
     noProducts: 'No products match your criteria.',
     detailsTitle: 'Details',
     craftTechnique: 'Craft technique',
     donationMessage: 'With each purchase you donate',
     currencyUnit: 'USD',
-    // Label for product detail link instead of purchase
     viewDetails: 'Learn more',
     impactTitle: 'Our Impact',
     impactSubtitle: 'Measuring the change we make together',
@@ -61,32 +56,29 @@ const translations = {
     password: 'Password',
     confirmPassword: 'Confirm Password',
     name: 'Name',
-    message: 'Message'
-    , aboutMissionTitle: 'Our Mission'
-    , aboutMissionText: 'The Weaving Love Project is a public-interest initiative founded by Lory Luo, using intangible heritage crafts to empower disadvantaged women. We partner with the Chaoxi Charity Center to sell handcrafted gifts made by disadvantaged women, and reinvest profits into women\u2019s entrepreneurship training programmes. Our mission is to inspire Generation Z through stories of craftsmanship, while advancing sustainable philanthropy, female entrepreneurship and the preservation of traditional culture.'
-    , aboutChaoxiTitle: 'Chaoxi Charity Center'
-    , aboutChaoxiText: 'Chaoxi Charity Center provides training and resources for women artisans across multiple provinces. With the support of Chaoxi, women from low income, disabled, unemployed and other disadvantaged groups learn yarn weaving craft skills; they not only gain employment but also offer high quality handmade products to society. Let us weave warmth with our hands and spread love together.'
-    , aboutStoryTitle: 'Stories Behind the Crafts'
-    , aboutStoryText: 'Meet the artisans who bring our products to life.'
-    , impactPlanTitle: 'Buy One Donate One'
-    , impactPlanText: 'For every item purchased we donate a portion of the proceeds to train new women artisans.'
-    , impactDonationTitle: 'Donation Flow'
-
-    , impactDonationText: '10% of product price goes toward training programmes and resources.'
-    , impactTrainTitle: 'Train a Craftswoman'
-    , impactTrainText: 'Your contribution helps us fund classes and materials for women entering the programme.'
-    , empowerIntro: 'Through our EmpowerHer programme, founder Lory encourages women entrepreneurs by linking traditional crafts with new media. Join our workshops and unlock your potential.'
-    , story1Title: 'From Survivor to Artisan'
-    , story1Content: 'Libing once lived in poverty, feeling no light ahead. By chance she joined a traditional embroidery workshop run by a charity. At first her hands trembled as she held the needle, but she refused to give up. She painstakingly unpicked and re‑stitched her work, practising stitch by stitch until she understood the intricacy of this ancient craft. The small income from her embroidery helped her support herself, but more importantly it restored her confidence and sense of dignity. Today Libing is known in her community as a skilled artisan. She uses her evenings to run small classes where she patiently teaches other women, sharing the techniques and experiences she has gained. Her journey from aid recipient to artisan shows how craftsmanship can change a life; she hopes to kindle the same hope in others.'
-    , story2Title: 'Weaving a Future'
-    , story2Content: 'Xiaohong always dreamed of giving back to her village. After years of working away from home, she returned with a vision: to create a weaving cooperative where mothers could earn a living without leaving their families. Starting with just a couple of looms and her own skills, she invited women from surrounding farms to learn. Many were hesitant at first, but Xiaohong’s patience and encouragement helped them master the basics. Soon the cooperative began producing beautiful woven products sold both locally and online. As orders grew, more women joined, bringing laughter and camaraderie back into the community. For Xiaohong, success was not only measured in income but in the smiles of mothers who could now support their children’s education and stay close to home. Her weaving cooperative has become a beacon of hope, proving that when women support each other, they can weave a new life together.'
-    , backToStories: 'Back to Stories'
+    message: 'Message',
+    aboutMissionTitle: 'Our Mission',
+    aboutMissionText: 'The Weaving Love Project is a public-interest initiative founded by Lory Luo, using intangible heritage crafts to empower disadvantaged women. We partner with the Chaoxi Charity Center to sell handcrafted gifts made by disadvantaged women, and reinvest profits into women\u2019s entrepreneurship training programmes. Our mission is to inspire Generation Z through stories of craftsmanship, while advancing sustainable philanthropy, female entrepreneurship and the preservation of traditional culture.',
+    aboutChaoxiTitle: 'Chaoxi Charity Center',
+    aboutChaoxiText: 'Chaoxi Charity Center provides training and resources for women artisans across multiple provinces. With the support of Chaoxi, women from low income, disabled, unemployed and other disadvantaged groups learn yarn weaving craft skills; they not only gain employment but also offer high quality handmade products to society. Let us weave warmth with our hands and spread love together.',
+    aboutStoryTitle: 'Stories Behind the Crafts',
+    aboutStoryText: 'Meet the artisans who bring our products to life.',
+    impactPlanTitle: 'Buy One Donate One',
+    impactPlanText: 'For every item purchased we donate a portion of the proceeds to train new women artisans.',
+    impactDonationTitle: 'Donation Flow',
+    impactDonationText: '10% of product price goes toward training programmes and resources.',
+    impactTrainTitle: 'Train a Craftswoman',
+    impactTrainText: 'Your contribution helps us fund classes and materials for women entering the programme.',
+    empowerIntro: 'Through our EmpowerHer programme, founder Lory encourages women entrepreneurs by linking traditional crafts with new media. Join our workshops and unlock your potential.',
+    story1Title: 'From Survivor to Artisan',
+    story1Content: 'Libing once lived in poverty, feeling no light ahead. By chance she joined a traditional embroidery workshop run by a charity. At first her hands trembled as she held the needle, but she refused to give up. She painstakingly unpicked and re‑stitched her work, practising stitch by stitch until she understood the intricacy of this ancient craft. The small income from her embroidery helped her support herself, but more importantly it restored her confidence and sense of dignity. Today Libing is known in her community as a skilled artisan. She uses her evenings to run small classes where she patiently teaches other women, sharing the techniques and experiences she has gained. Her journey from aid recipient to artisan shows how craftsmanship can change a life; she hopes to kindle the same hope in others.',
+    story2Title: 'Weaving a Future',
+    story2Content: 'Xiaohong always dreamed of giving back to her village. After years of working away from home, she returned with a vision: to create a weaving cooperative where mothers could earn a living without leaving their families. Starting with just a couple of looms and her own skills, she invited women from surrounding farms to learn. Many were hesitant at first, but Xiaohong’s patience and encouragement helped them master the basics. Soon the cooperative began producing beautiful woven products sold both locally and online. As orders grew, more women joined, bringing laughter and camaraderie back into the community. For Xiaohong, success was not only measured in income but in the smiles of mothers who could now support their children’s education and stay close to home. Her weaving cooperative has become a beacon of hope, proving that when women support each other, they can weave a new life together.',
+    backToStories: 'Back to Stories'
   },
   zh: {
     siteName: '织爱计划',
-    // 更新主视觉标语以突出非遗手作和传承希望
     tagline: '非遗手作：传承与希望',
-    // 更新行动按钮文案以更贴合购买和支持女性
     buyNow: '选购礼品',
     supportThem: '支持女性',
     navHome: '首页',
@@ -106,10 +98,8 @@ const translations = {
     noProducts: '没有符合条件的商品。',
     detailsTitle: '产品详情',
     craftTechnique: '工艺说明',
-    d
-      onationMessage: '每件商品购买将捐赠',
+    donationMessage: '每件商品购买将捐赠',
     currencyUnit: '元',
-    // Label for product detail link instead of purchase
     viewDetails: '查看详情',
     impactTitle: '我们的影响力',
     impactSubtitle: '衡量我们共同创造的改变',
@@ -128,63 +118,43 @@ const translations = {
     password: '密码',
     confirmPassword: '确认密码',
     name: '姓名',
-    message: '留言'
-    , aboutMissionTitle: '我们的使命'
-    , aboutMissionText: '织爱计划是由Lory Luo创立的公益项目，通过非遗手工艺为弱势女性群体赋能。我们与潮汐公益中心合作售卖弱势女性群体制作的手工礼品，并将利润回馈于女性创业培训项目。我们的使命是用匠心故事激励Z世代，推动可持续公益、女性创业精神和传统文化传承。'
-    , aboutChaoxiTitle: '潮汐公益中心'
-    , aboutChaoxiText: '潮汐公益中心为妇女匠人提供培训和资源，覆盖多个省份。在潮汐中心的支持下，低收入、残障、失业等女性群体通过学习毛线编织手工技艺，不仅实现了就业，还为社会提供了高品质的手工艺品。让我们一起用双手编织温暖，传递爱心！'
-    , aboutStoryTitle: '非遗技艺背后的她们'
-    , aboutStoryText: '了解那些赋予产品生命的手艺人。'
-    , impactPlanTitle: '买一捐一'
-    , impactPlanText: '每售出一件产品，我们都将部分收益用于培训新的女性匠人。'
-    , impactDonationTitle: '资金流向'
-    , impactDonationText: '商品售价的10%将用于培训项目和资源。'
-    , impactTrainTitle: '资助一位手艺人'
-    , impactTrainText: '你的捐助将帮助我们为参与项目的女性提供课程和材料。'
-    , e
-      mpowerIntro: '通过我们的创业支持项目，创始人Lory鼓励女性将传统技艺与新媒体结合，开启创业之路。欢迎参加我们的课程，释放你的潜力。'
-    , story1Title: '从受助者到匠人'
-    , story1Content: '丽冰曾深陷贫困，生活的重担让她一度看不到前方的光亮。一次偶然的机会，她参加了公益组织开设的传统刺绣培训班，最初握针的手颤抖不已，但她没有退缩。一次次拆线重绣，一针一线地练习，她渐渐领悟了这门古老技艺的精妙。刺绣带来的微薄收入让她可以维持生计，更重要的是让她重新找回了自信和尊严。如今的丽冰已经成长为社区公认的巧手匠人，她利用晚上的时间开办小课堂，耐心指导其他女性学习刺绣，将自己掌握的技巧和经历分享给她们。从受助者到匠人，她用手艺改变了自己的命运，也希望用温柔的力量为更多人点燃希望。'
-    , story2Title: '织出新生活'
-    , story2Content: '晓红一直梦想着回馈自己的家乡。在外打工多年后，她带着一个愿景回来：成立一个编织合作社，让妈妈们在不离开家庭的情况下就能谋生。她用仅有的几台织机和自己掌握的技能起步，邀请附近的农家妇女来学习。刚开始许多女性犹豫不决，是晓红耐心的指导和鼓励让她们掌握了基本功。很快，合作社开始生产精美的编织产品，并通过当地集市和线上渠道销售。随着订单增加，越来越多的女性加入，合作社里又响起欢声笑语。对晓红来说，成功不仅体现在收入增长，更在于那些母亲的笑容——她们既能养家糊口，又能陪伴孩子成长。她创办的编织合作社已经成为希望的灯塔，证明女性互助可以一起织出新生活。'
-    , backToStories: '返回故事列表'
+    message: '留言',
+    aboutMissionTitle: '我们的使命',
+    aboutMissionText: '织爱计划是由Lory Luo创立的公益项目，通过非遗手工艺为弱势女性群体赋能。我们与潮汐公益中心合作售卖弱势女性群体制作的手工礼品，并将利润回馈于女性创业培训项目。我们的使命是用匠心故事激励Z世代，推动可持续公益、女性创业精神和传统文化传承。',
+    aboutChaoxiTitle: '潮汐公益中心',
+    aboutChaoxiText: '潮汐公益中心为妇女匠人提供培训和资源，覆盖多个省份。在潮汐中心的支持下，低收入、残障、失业等女性群体通过学习毛线编织手工技艺，不仅实现了就业，还为社会提供了高品质的手工艺品。让我们一起用双手编织温暖，传递爱心！',
+    aboutStoryTitle: '非遗技艺背后的她们',
+    aboutStoryText: '了解那些赋予产品生命的手艺人。',
+    impactPlanTitle: '买一捐一',
+    impactPlanText: '每售出一件产品，我们都将部分收益用于培训新的女性匠人。',
+    impactDonationTitle: '资金流向',
+    impactDonationText: '商品售价的10%将用于培训项目和资源。',
+    impactTrainTitle: '资助一位手艺人',
+    impactTrainText: '你的捐助将帮助我们为参与项目的女性提供课程和材料。',
+    empowerIntro: '通过我们的创业支持项目，创始人Lory鼓励女性将传统技艺与新媒体结合，开启创业之路。欢迎参加我们的课程，释放你的潜力。',
+    story1Title: '从受助者到匠人',
+    story1Content: '丽冰曾深陷贫困，生活的重担让她一度看不到前方的光亮。一次偶然的机会，她参加了公益组织开设的传统刺绣培训班，最初握针的手颤抖不已，但她没有退缩。一次次拆线重绣，一针一线地练习，她渐渐领悟了这门古老技艺的精妙。刺绣带来的微薄收入让她可以维持生计，更重要的是让她重新找回了自信和尊严。如今的丽冰已经成长为社区公认的巧手匠人，她利用晚上的时间开办小课堂，耐心指导其他女性学习刺绣，将自己掌握的技巧和经历分享给她们。从受助者到匠人，她用手艺改变了自己的命运，也希望用温柔的力量为更多人点燃希望。',
+    story2Title: '织出新生活',
+    story2Content: '晓红一直梦想着回馈自己的家乡。在外打工多年后，她带着一个愿景回来：成立一个编织合作社，让妈妈们在不离开家庭的情况下就能谋生。她用仅有的几台织机和自己掌握的技能起步，邀请附近的农家妇女来学习。刚开始许多女性犹豫不决，是晓红耐心的指导和鼓励让她们掌握了基本功。很快，合作社开始生产精美的编织产品，并通过当地集市和线上渠道销售。随着订单增加，越来越多的女性加入，合作社里又响起欢声笑语。对晓红来说，成功不仅体现在收入增长，更在于那些母亲的笑容——她们既能养家糊口，又能陪伴孩子成长。她创办的编织合作社已经成为希望的灯塔，证明女性互助可以一起织出新生活。',
+    backToStories: '返回故事列表'
   }
 };
 
-/**
- * Get the current language selection.  Defaults to Chinese (zh) if no
- * preference is stored.  Values are persisted in localStorage.
- */
 function getCurrentLang() {
   return localStorage.getItem('lang') || 'zh';
 }
 
-/**
- * Set the current language and refresh the UI accordingly.  The
- * selected value is stored so that subsequent visits use the same
- * language.
- * @param {string} lang Language code, e.g. 'en' or 'zh'.
- */
 function setLang(lang) {
   localStorage.setItem('lang', lang);
   updateLang();
 }
 
-/**
- * Update text content of elements with a data‑i18n attribute.  This
- * function reads the current language and looks up the appropriate
- * translation in the translations object.  Elements without a
- * matching translation remain unchanged.
- */
-functio
-  n updateLang() {
+function updateLang() {
   const lang = getCurrentLang();
   document.documentElement.lang = lang;
-  // update active state on language buttons
   document.querySelectorAll('.lang-switch button').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
-  // update nav highlight
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.dataset.i18n;
     const text = translations[lang][key];
@@ -192,26 +162,22 @@ functio
       el.textContent = text;
     }
   });
-  // update dynamic content if needed
   if (typeof refreshDynamicContent === 'function') {
     refreshDynamicContent();
   }
 }
 
-/* Sample product catalogue.  Each product contains both Chinese and
- * English fields.  For a real site these would be loaded from a
- * backend or CMS. */
+/* 核心修改：重新排序并规范化四大产品品类，确保傣纸在第一位 */
 const products = [
-    {
+  {
     id: 5,
     category: 'Stationery',
     uses: ['office', 'gift'],
     price: 46,
-    image: 'assets/daipaper.jpg',
+    image: 'images/daipaper1.jpg', /* 修改为图片文件夹统一路径 */
     name: {
       en: 'Dai Handmade Paper',
-      zh: '傣纸产品'
-   
+      zh: '非遗手工傣纸'
     },
     description: {
       en: 'Rustic aroma of paper and a time journal — Dai handmade paper. Dai paper is a national intangible heritage craft made from mulberry bark through 11 hand-crafted steps, chemical-free, environmentally friendly and biodegradable. It has an ancient texture and natural warmth, embodying a dialogue between history and nature.',
@@ -227,26 +193,22 @@ const products = [
     },
     donation: 6
   },
-
   {
     id: 1,
     category: 'Accessory',
     uses: ['festival', 'business'],
     price: 35,
-    // Updated image to Tianjin‑style yarn weaving disc (replaced with new weaving image)
     image: 'assets/weaving2.jpg',
     name: {
       en: 'Tianjin Yarn Weaving',
       zh: '津派毛线手工编织'
     },
-    // New description emphasising Haihe culture and intangible heritage
     description: {
       en: 'Stitches carry Haihe’s sentiment — Tianjin‑style yarn weaving blends northern folk art and port city spirit. Each stitch carries life’s wisdom. With heritage craftsmanship and heartfelt handiwork, it weaves warmth and conveys blessings.',
-      zh: '针尖上的海河情\n——津派毛线编织\n津 派 编 织 ， 融 北 方 民 艺 与 港 城 气 韵 ，\n一 针 一 线 承 载 生 活 智 慧 ，\n非 遗 传 承 ， 匠 心 手 作 ，\n织 就 温 暖 ， 寄 寓 美 好 。'
+      zh: '针尖上的海河情——津派毛线编织。津派编织，融北方民艺与港城气韵，一针一线承载生活智慧，非遗传承，匠心手作，织就温暖，寄寓美好。'
     },
     craft: {
       en: 'Tianjin artisans weave yarn into intricate patterns, blending folk art with port city spirit. Every stitch embodies life’s wisdom.',
-     
       zh: '津派匠人将毛线编织成精美图案，融汇民间艺术与港城气韵，一针一线体现生活智慧。'
     },
     story: {
@@ -260,7 +222,6 @@ const products = [
     category: 'Accessory',
     uses: ['business', 'gift'],
     price: 60,
-    // Updated image to high‑quality cloisonné brooch (replaced with new cloisonné photo)
     image: 'assets/cloisonne2.jpg',
     name: {
       en: 'Cloisonné Enamel Brooch',
@@ -268,7 +229,7 @@ const products = [
     },
     description: {
       en: 'A splendid dance of metal and colour — cloisonné enamel brooch. Cloisonné, formally named copper‑body filigree enamel and also known as inlaid enamel, is an ancient Chinese craft with deep cultural heritage.',
-      zh: '金属与色彩的华丽舞蹈\n——掐丝珐琅胸针\n掐 丝 珐 琅 ， 正 名 为 铜 胎 掐 丝 珐 琅 ，\n俗 名 珐 蓝 ， 又 称 嵌 珐 琅 ， 是 一 种\n具 有 悠 久 历 史 和 深 厚 文 化 底 蕴 的\n中 国 传 统 工 艺 品 。'
+      zh: '金属与色彩的华丽舞蹈——掐丝珐琅胸针。掐丝珐琅，正名为铜胎掐丝珐琅，俗名珐蓝，又称嵌 珐琅，是一种具有悠久历史和深厚文化底蕴 中国传统工艺品。'
     },
     craft: {
       en: 'Metal wires are bent into intricate patterns and filled with colourful enamel before firing, creating a dazzling finish.',
@@ -281,13 +242,10 @@ const products = [
     donation: 8
   },
   {
-    id:
-      
-      3,
+    id: 3,
     category: 'Decor',
     uses: ['gift', 'home'],
     price: 45,
-    // Updated image to thread‑wrapped flower (Chan Hua) (replaced with new Chan Hua image)
     image: 'assets/chanflower.jpg',
     name: {
       en: 'Thread‑Wrapped Flower',
@@ -295,7 +253,7 @@ const products = [
     },
     description: {
       en: 'The flamboyant bloom of silk threads — intangible heritage threading flowers. Chan Hua flourished in the Qing dynasty: a cardboard base is used, silk threads are wound and fixed with copper wire. Recognised as national intangible cultural heritage, its exquisite patterns symbolise a bright future, abundance and blessings.',
-      zh: '丝线的绚烂绽放\n——非遗技法缠花\n缠 花 盛 于 清 代 ， 以 纸 板 作 为 坯 架 ，\n丝 线 缠 绕 ， 铜 丝 固 定 ， 是 国 家 非\n物 质 文 化 遗 产 。 非 遗 缠 花 的 精 美\n图 案 寓 示 着 前 途 似 锦 、 吉 庆 有 余 、\n有 福 有 禄 等 含 义 。'
+      zh: '丝线的绚烂绽放——非遗技法缠花。缠花盛于清代，以纸板作为坯架，丝线缠绕，铜丝固定，是国家非物质文化遗产。非遗缠花的精美图案寓示着前途似锦、吉庆有余、有福有禄等含义。'
     },
     craft: {
       en: 'Silk threads are wound around a cardboard form and fixed with copper wire, forming elaborate floral patterns.',
@@ -306,43 +264,9 @@ const products = [
       zh: '现代女性匠人重现缠花传统技艺，寓意希望与繁荣。'
     },
     donation: 5
-  },
-  {
-    id: 4,
-    category: 'Fan',
-    uses: ['festival', 'decor'],
-    price: 88,
-    // Updated image to user‑provided Jiangnan style heritage fan (tuanshan)
-    image: 'assets/tuanshan.jpg',
-    name: {
-      en: 'Heritage Hand Fan',
-      zh: '非遗团扇'
-    },
-    
-    description: {
-      // Updated description to poetic lines about the Jiangnan breeze
-      en: 'Jiangnan breeze swaying in your palm — intangible heritage fan. This light fan gathers the essence of bamboo, wood and silk; each face depicts poetic elegance. With cultural heritage and exquisite craftsmanship, it sways gently in the breeze, symbolising reunion and harmony.',
-      zh: '掌中摇曳江南风\n——非遗团扇\n团 扇 轻 盈 ， 聚 竹 木 绢 丝 之 灵 秀 ，\n一 柄 一 面 绘 尽 诗 书 雅 意 ，\n非 遗 风 骨 ， 匠 心 独 运 ，\n摇 曳 清 风 ， 寄 寓 团 圆 。'
-    },
-    craft: {
-      en: 'Artisans craft delicate fans by combining bamboo, wood and silk fabrics using intangible heritage techniques.',
-      zh: '匠人以竹骨、木柄和绢丝结合，运用非遗工艺制作精美团扇。'
-    },
-    story: {
-      en: 'Created by women artisans who preserve the heritage of traditional fan‑making, these fans carry wishes of reunion.',
-      zh: '由女匠人传承传统制扇技艺制成的团扇，承载着团圆的祝福。'
-    },
-    donation: 7
   }
 ];
 
-// Stories for the home page (short philanthropic narratives).  These
-// mirror the goal of sharing artisans’ experiences【407956085884721†L27-L30】.
-// Detailed stories for the home page.
-// Each story includes a title, long narrative text in both languages,
-// an image that matches the story theme and site colour palette, and
-// a link to a dedicated story detail page.  These narratives emphasise
-// how craftsmanship empowers women and communities.
 const stories = [
   {
     title: { en: 'From Survivor to Artisan', zh: '从受助者到匠人' },
@@ -353,7 +277,6 @@ const stories = [
     image: 'assets/story1.jpg',
     link: 'story1.html'
   },
-
   {
     title: { en: 'Weaving a Future', zh: '织出新生活' },
     text: {
@@ -365,7 +288,6 @@ const stories = [
   }
 ];
 
-// Testimonials for the home page.
 const testimonials = [
   {
     name: 'Emily',
@@ -385,17 +307,12 @@ const testimonials = [
   }
 ];
 
-// Impact statistics for the Impact page.  These numbers could be
-// fetched from a backend in a real application.  Here we provide
-// sample values.
-con
-  st impactStats = {
+const impactStats = {
   peopleSupported: 320,
   itemsSold: 850,
   regionsCovered: 15
 };
 
-// Training programmes for the Empower page.
 const trainings = [
   {
     title: { en: 'Embroidery Basics Workshop', zh: '刺绣基础课' },
@@ -423,42 +340,31 @@ const trainings = [
   }
 ];
 
-/**
-
- * Populate the featured products section on the home page.  This
- * function selects the first few items from the products array and
- * renders them as cards.  The number of items shown can be adjusted.
- */
 function populateFeaturedProducts() {
   const container = document.getElementById('featured-products');
   if (!container) return;
   container.innerHTML = '';
   const lang = getCurrentLang();
+  // 确保前4个正好展现我们的四大核心品类
   products.slice(0, 4).forEach(product => {
     const card = document.createElement('div');
-  
     card.innerHTML = `
       <img src="${product.image}" alt="${product.name[lang]}">
       <div class="card-body">
         <h3>${product.name[lang]}</h3>
         <p>${product.description[lang]}</p>
-        <!-- Detail link removed as products have no dedicated page -->
       </div>
     `;
     container.appendChild(card);
   });
 }
 
-/**
- * Populate the stories section on the home page.
- */
 function populateStories() {
   const container = document.getElementById('story-grid');
   if (!container) return;
   container.innerHTML = '';
   const lang = getCurrentLang();
   stories.forEach(story => {
-    // Wrap each card in an anchor so the entire card is clickable.
     const link = document.createElement('a');
     link.href = story.link || '#';
     link.className = 'story-card';
@@ -473,9 +379,6 @@ function populateStories() {
   });
 }
 
-/**
- * Populate testimonials on the home page.
- */
 function populateTestimonials() {
   const container = document.getElementById('testimonial-list');
   if (!container) return;
@@ -494,15 +397,11 @@ function populateTestimonials() {
   });
 }
 
-/**
- * Render the product list on the shop page with current filters.
- */
 function renderProducts() {
   const container = document.getElementById('product-list');
   if (!container) return;
   container.innerHTML = '';
   const lang = getCurrentLang();
-  // collect filter values
   const categoryFilter = document.getElementById('filter-category')?.value;
   const useFilter = Array.from(document.querySelectorAll('input[name="filter-use"]:checked')).map(el => el.value);
   const maxPrice = parseFloat(document.getElementById('filter-price').value);
@@ -526,35 +425,24 @@ function renderProducts() {
       <div class="card-body">
         <h3>${product.name[lang]}</h3>
         <p>${product.description[lang]}</p>
-        <!-- Detail link removed -->
       </div>
     `;
     container.appendChild(card);
   });
 }
 
-/**
- * Render filter controls on the shop page.
- */
 function renderFilters() {
   const categorySelect = document.getElementById('filter-category');
   const useContainer = document.getElementById('filter-use-container');
-  const priceInput = document.getElementById('filter-price');
   if (!categorySelect || !useContainer) return;
-  // categories
   const categories = Array.from(new Set(products.map(p => p.category)));
   categorySelect.innerHTML = `<option value="all">All</option>` + categories.map(cat => `<option value="${cat}">${cat}</option>`).join('');
-  // uses
   const uses = Array.from(new Set(products.flatMap(p => p.uses)));
   useContainer.innerHTML = uses.map(u => `
     <label><input type="checkbox" name="filter-use" value="${u}"> ${u.charAt(0).toUpperCase() + u.slice(1)}</label>
   `).join(' ');
 }
 
-/**
- * Attach listeners to filters to re-render product list when they
- * change.
- */
 function addFilterListeners() {
   const categorySelect = document.getElementById('filter-category');
   const priceInput = document.getElementById('filter-price');
@@ -564,9 +452,6 @@ function addFilterListeners() {
   if (useContainer) useContainer.addEventListener('change', renderProducts);
 }
 
-/**
- * Render details for a single product on the product page.
- */
 function renderProductDetails() {
   const params = new URLSearchParams(window.location.search);
   const id = parseInt(params.get('id'));
@@ -584,20 +469,15 @@ function renderProductDetails() {
         <p>${product.craft[lang]}</p>
         <h3>${translations[lang].donationMessage} ${product.donation} ${translations[lang].currencyUnit}</h3>
         <p>${product.story[lang]}</p>
-    <!-- Price and purchase button removed as per updated design -->
       </div>
     </div>
   `;
 }
 
-/**
- * Render achievements statistics on the about page.
- */
 function renderAchievements() {
   const container = document.getElementById('achievements');
   if (!container) return;
   container.innerHTML = '';
-  // Example achievements, could be dynamic in a real app
   const items = [
     { value: 10, labelEn: 'Years Empowering Women', labelZh: '持续赋能年数' },
     { value: 50, labelEn: 'Artisans Supported', labelZh: '支持匠人数' },
@@ -615,10 +495,6 @@ function renderAchievements() {
   });
 }
 
-/**
- * Render impact statistics on the impact page and update values based
- * on the translation.  This also triggers the chart rendering.
- */
 function renderImpactStats() {
   const peopleEl = document.getElementById('people-supported');
   const itemsEl = document.getElementById('items-sold');
@@ -638,18 +514,11 @@ function renderImpactStats() {
   }
 }
 
-/**
- * Render a bar chart on the impact page using Chart.js.  The
- * categories shown correspond to the three impact metrics and use
- * translated labels.  This function should be called after the
- * translations have been applied.
- */
 function renderImpactChart() {
   const canvas = document.getElementById('impact-chart');
   if (!canvas) return;
   const lang = getCurrentLang();
   const ctx = canvas.getContext('2d');
-  // Destroy any existing chart to prevent duplication
   if (window.impactChart) {
     window.impactChart.destroy();
   }
@@ -684,9 +553,6 @@ function renderImpactChart() {
   });
 }
 
-/**
- * Render the training programme cards on the Empower page.
- */
 function renderTrainings() {
   const container = document.getElementById('training-list');
   if (!container) return;
@@ -704,43 +570,24 @@ function renderTrainings() {
   });
 }
 
-/**
- * This function is called by updateLang() whenever the language
- * changes to refresh dynamic parts of the page, such as product
- * lists, stories, testimonials, impact stats and charts.
- */
 function refreshDynamicContent() {
-  // home page components
   populateFeaturedProducts();
   populateStories();
   populateTestimonials();
-  // shop page
   renderProducts();
-  // product page
   renderProductDetails();
-  // impact page
   renderImpactStats();
   renderImpactChart();
-  // empower page
   renderTrainings();
 }
 
-/**
- * Initialise event listeners and page-specific features once the
- * document has loaded.  Listeners include the language toggle,
- * filter controls, and Chart.js initialisation.
- */
 document.addEventListener('DOMContentLoaded', () => {
-  // attach language toggle buttons
   document.querySelectorAll('.lang-switch button').forEach(btn => {
     btn.addEventListener('click', () => setLang(btn.dataset.lang));
   });
-  // set default language and update translations
   updateLang();
-  // render filters if present
   renderFilters();
   addFilterListeners();
-  // page-specific rendering
   populateFeaturedProducts();
   populateStories();
   populateTestimonials();
