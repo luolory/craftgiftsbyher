@@ -535,3 +535,13 @@ footer {
   font-size: 0.8rem;
   color: var(--color-light-text);
 }
+/* 确保首页和商店的所有产品卡片图片完整显示，不被裁剪 */
+.featured-card img, 
+.product-card img, 
+#featured-products img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important; /* 核心：让图片完整缩放显示，不裁剪局部 */
+    max-height: 250px; /* 限制一个合适的最大高度，防止图片过长 */
+    background-color: #fff; /* 如果图片比例不一致，用白色底色垫底保持整齐 */
+}
