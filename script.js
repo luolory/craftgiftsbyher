@@ -4,14 +4,14 @@
  * This file defines translation data and helper functions to
  * implement bilingual support, navigation interactivity, product
  * filtering, and simple data-driven components such as charts and
- * forms.  To add new text to the site, assign a data‑i18n
+ * forms. To add new text to the site, assign a data‑i18n
  * attribute to an element and create corresponding keys in the
- * translations object below.  The script reads the user’s chosen
+ * translations object below. The script reads the user’s chosen
  * language from localStorage so that preference persists across
  * pages.
  */
 
-// Translation strings for English and Chinese.  Only include keys
+// Translation strings for English and Chinese. Only include keys
 // actually used in the markup; unused keys will be ignored.
 const translations = {
   en: {
@@ -58,7 +58,7 @@ const translations = {
     name: 'Name',
     message: 'Message',
     aboutMissionTitle: 'Our Mission',
-    aboutMissionText: 'The Weaving Love Project is a public-interest initiative founded by Lory Luo, using intangible heritage crafts to empower disadvantaged women. We partner with the Chaoxi Charity Center to sell handcrafted gifts made by disadvantaged women, and reinvest profits into women\u2019s entrepreneurship training programmes. Our mission is to inspire Generation Z through stories of craftsmanship, while advancing sustainable philanthropy, female entrepreneurship and the preservation of traditional culture.',
+    aboutMissionText: 'The Weaving Love Project is a public-interest initiative founded by Lory Luo, using intangible heritage crafts to empower disadvantaged women. We partner with the Chaoxi Charity Center to sell handcrafted gifts made by disadvantaged women, and reinvest profits into women’s entrepreneurship training programmes. Our mission is to inspire Generation Z through stories of craftsmanship, while advancing sustainable philanthropy, female entrepreneurship and the preservation of traditional culture.',
     aboutChaoxiTitle: 'Chaoxi Charity Center',
     aboutChaoxiText: 'Chaoxi Charity Center provides training and resources for women artisans across multiple provinces. With the support of Chaoxi, women from low income, disabled, unemployed and other disadvantaged groups learn yarn weaving craft skills; they not only gain employment but also offer high quality handmade products to society. Let us weave warmth with our hands and spread love together.',
     aboutStoryTitle: 'Stories Behind the Crafts',
@@ -140,21 +140,39 @@ const translations = {
   }
 };
 
+/**
+ * Get the current language selection. Defaults to Chinese (zh) if no
+ * preference is stored. Values are persisted in localStorage.
+ */
 function getCurrentLang() {
   return localStorage.getItem('lang') || 'zh';
 }
 
+/**
+ * Set the current language and refresh the UI accordingly. The
+ * selected value is stored so that subsequent visits use the same
+ * language.
+ * @param {string} lang Language code, e.g. 'en' or 'zh'.
+ */
 function setLang(lang) {
   localStorage.setItem('lang', lang);
   updateLang();
 }
 
+/**
+ * Update text content of elements with a data‑i18n attribute. This
+ * function reads the current language and looks up the appropriate
+ * translation in the translations object. Elements without a
+ * matching translation remain unchanged.
+ */
 function updateLang() {
   const lang = getCurrentLang();
   document.documentElement.lang = lang;
+  // update active state on language buttons
   document.querySelectorAll('.lang-switch button').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.lang === lang);
   });
+  // update components with data-i18n
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.dataset.i18n;
     const text = translations[lang][key];
@@ -162,22 +180,24 @@ function updateLang() {
       el.textContent = text;
     }
   });
+  // update dynamic content if needed
   if (typeof refreshDynamicContent === 'function') {
     refreshDynamicContent();
   }
 }
 
-/* 核心修改：重新排序并规范化四大产品品类，确保傣纸在第一位 */
+/* Sample product catalogue. Each product contains both Chinese and
+ * English fields. */
 const products = [
   {
     id: 5,
     category: 'Stationery',
     uses: ['office', 'gift'],
     price: 46,
-    image: 'images/daipaper1.jpg', /* 修改为图片文件夹统一路径 */
+    image: 'assets/daipaper.jpg',
     name: {
       en: 'Dai Handmade Paper',
-      zh: '非遗手工傣纸'
+      zh: '傣纸产品'
     },
     description: {
       en: 'Rustic aroma of paper and a time journal — Dai handmade paper. Dai paper is a national intangible heritage craft made from mulberry bark through 11 hand-crafted steps, chemical-free, environmentally friendly and biodegradable. It has an ancient texture and natural warmth, embodying a dialogue between history and nature.',
@@ -229,7 +249,7 @@ const products = [
     },
     description: {
       en: 'A splendid dance of metal and colour — cloisonné enamel brooch. Cloisonné, formally named copper‑body filigree enamel and also known as inlaid enamel, is an ancient Chinese craft with deep cultural heritage.',
-      zh: '金属与色彩的华丽舞蹈——掐丝珐琅胸针。掐丝珐琅，正名为铜胎掐丝珐琅，俗名珐蓝，又称嵌 珐琅，是一种具有悠久历史和深厚文化底蕴 中国传统工艺品。'
+      zh: '金属与色彩的华丽舞蹈——掐丝珐琅胸针。掐丝珐琅，正名为铜胎掐丝珐琅，俗名珐蓝，又称嵌 珐琅，是一种具有悠久历史和深厚文化底蕴的中国传统工艺品。'
     },
     craft: {
       en: 'Metal wires are bent into intricate patterns and filled with colourful enamel before firing, creating a dazzling finish.',
@@ -264,15 +284,64 @@ const products = [
       zh: '现代女性匠人重现缠花传统技艺，寓意希望与繁荣。'
     },
     donation: 5
+  },
+  {
+    id: 4,
+    category: 'Fan',
+    uses: ['festival', 'decor'],
+    price: 88,
+    image: 'assets/tuanshan.jpg',
+    name: {
+      en: 'Heritage Hand Fan',
+      zh: '非遗团扇'
+    },
+    description: {
+      en: 'Jiangnan breeze swaying in your palm — intangible heritage fan. This light fan gathers the essence of bamboo, wood and silk; each face depicts poetic elegance. With cultural heritage and exquisite craftsmanship, it sways gently in the breeze, symbolising reunion and harmony.',
+      zh: '掌中摇曳江南风——非遗团扇。团扇轻盈，聚竹木绢丝之灵秀，一柄一面绘尽诗书雅意，非遗风骨，匠心独运，摇曳清风，寄寓团圆。'
+    },
+    craft: {
+      en: 'Artisans craft delicate fans by combining bamboo, wood and silk fabrics using intangible heritage techniques.',
+      zh: '匠人以竹骨、木柄和绢丝结合，运用非遗工艺制作精美团扇。'
+    },
+    story: {
+      en: 'Created by women artisans who preserve the heritage of traditional fan‑making, these fans carry wishes of reunion.',
+      zh: '由女匠人传承传统制扇技艺制成的团扇，承载着团圆的祝福。'
+    },
+    donation: 7
+  },
+  {
+    id: 6,
+    category: 'Accessory',
+    uses: ['gift', 'daily'],
+    price: 42,
+    image: 'assets/bucketbag.jpg',
+    name: {
+      en: 'Dulong Woven Bucket Bag',
+      zh: '「虹序」独龙毯锁扣水桶包'
+    },
+    description: {
+      en: 'From the Yunnan mountains, hand-woven with centuries-old tradition. A colorful piece of wearable art carrying the essence of the Dulong people.',
+      zh: '源自云南独龙江畔的千年非遗独龙毯，每一道彩条都是独龙族匠人手工织就的山河诗意。精致锁扣水桶包型，将民族匠心融入日常实用包袋。'
+    },
+    craft: {
+      en: 'Hand-woven using traditional Dulong looms by rural women artisans, bordered with genuine leather and adjustable straps.',
+      zh: '由独龙族当地妇女手工织布制作，保留传统手工肌理；牛皮包边挺括有型，拉链与锁扣双开合。'
+    },
+    story: {
+      en: 'Empowering minority women in remote Dulongjiang by transforming ancient weaving heritages into sustainable fashion livelihoods.',
+      zh: '通过将深山中的独龙毯技艺转化为时尚好物，帮助边远地区的少数民族妇女和留守女性获得尊严与持续性收入。'
+    },
+    donation: 8
   }
 ];
 
+// Stories for the home page
 const stories = [
   {
     title: { en: 'From Survivor to Artisan', zh: '从受助者到匠人' },
     text: {
-      en: `Libing once lived in poverty, feeling no light ahead. By chance she joined a traditional embroidery workshop run by a charity. At first her hands trembled as she held the needle, but she refused to give up. She painstakingly unpicked and re‑stitched her work, practising stitch by stitch until she understood the intricacy of this ancient craft. The small income from her embroidery helped her support herself, but more importantly it restored her confidence and sense of dignity. Today Libing is known in her community as a skilled artisan. She uses her evenings to run small classes where she patiently teaches other women, sharing the techniques and experiences she has gained. Her journey from aid recipient to artisan shows how craftsmanship can change a life; she hopes to kindle the same hope in others.`,
-      zh: `丽冰曾深陷贫困，生活的重担让她一度看不到前方的光亮。一次偶然的机会，她参加了公益组织开设的传统刺绣培训班，最初握针的手颤抖不已，但她没有退缩。一次次拆线重绣，一针一线地练习，她渐渐领悟了这门古老技艺的精妙。刺绣带来的微薄收入让她可以维持生计，更重要的是让她重新找回了自信和尊严。如今的丽冰已经成长为社区公认的巧手匠人，她利用晚上的时间开办小课堂，耐心指导其他女性学习刺绣，将自己掌握的技巧和经历分享给她们。从受助者到匠人，她用手艺改变了自己的命运，也希望用温柔的力量为更多人点燃希望。`
+      en: `Libing once lived in poverty, feeling no light ahead. By chance she joined a traditional embroidery workshop run by a charity...`,
+      zh: `丽冰曾深陷贫困，生活的重担让她一度看不到前方的光亮。一次偶然的机会，她参加了公益组织开设的传统刺绣培训班...`
     },
     image: 'assets/story1.jpg',
     link: 'story1.html'
@@ -280,14 +349,15 @@ const stories = [
   {
     title: { en: 'Weaving a Future', zh: '织出新生活' },
     text: {
-      en: `Xiaohong always dreamed of giving back to her village. After years of working away from home, she returned with a vision: to create a weaving cooperative where mothers could earn a living without leaving their families. Starting with just a couple of looms and her own skills, she invited women from surrounding farms to learn. Many were hesitant at first, but Xiaohong’s patience and encouragement helped them master the basics. Soon the cooperative began producing beautiful woven products sold both locally and online. As orders grew, more women joined, bringing laughter and camaraderie back into the community. For Xiaohong, success was not only measured in income but in the smiles of mothers who could now support their children’s education and stay close to home. Her weaving cooperative has become a beacon of hope, proving that when women support each other, they can weave a new life together.`,
-      zh: `晓红一直梦想着回馈自己的家乡。在外打工多年后，她带着一个愿景回来：成立一个编织合作社，让妈妈们在不离开家庭的情况下就能谋生。她用仅有的几台织机和自己掌握的技能起步，邀请附近的农家妇女来学习。刚开始许多女性犹豫不决，是晓红耐心的指导和鼓励让她们掌握了基本功。很快，合作社开始生产精美的编织产品，并通过当地集市和线上渠道销售。随着订单增加，越来越多的女性加入，合作社里又响起欢声笑语。对晓红来说，成功不仅体现在收入增长，更在于那些母亲的笑容——她们既能养家糊口，又能陪伴孩子成长。她创办的编织合作社已经成为希望的灯塔，证明女性互助可以一起织出新生活。`
+      en: `Xiaohong always dreamed of giving back to her village. After years of working away from home, she returned with a vision...`,
+      zh: `晓红一直梦想着回馈自己的家乡。在外打工多年后，她带着一个愿景回来...`
     },
     image: 'assets/story2.jpg',
     link: 'story2.html'
   }
 ];
 
+// Testimonials for the home page.
 const testimonials = [
   {
     name: 'Emily',
@@ -307,12 +377,14 @@ const testimonials = [
   }
 ];
 
+// Impact statistics
 const impactStats = {
   peopleSupported: 320,
   itemsSold: 850,
   regionsCovered: 15
 };
 
+// Training programmes for the Empower page.
 const trainings = [
   {
     title: { en: 'Embroidery Basics Workshop', zh: '刺绣基础课' },
@@ -329,14 +401,6 @@ const trainings = [
       en: 'Discover how to promote your craft on Douyin and TikTok.',
       zh: '学习如何在抖音和TikTok上传播你的手艺。'
     }
-  },
-  {
-    title: { en: 'Advanced Woodworking', zh: '木工进阶课程' },
-    date: '2025-10-01',
-    description: {
-      en: 'Deepen your skills with fine carving techniques.',
-      zh: '通过精细雕刻技法提升你的木工技能。'
-    }
   }
 ];
 
@@ -345,9 +409,9 @@ function populateFeaturedProducts() {
   if (!container) return;
   container.innerHTML = '';
   const lang = getCurrentLang();
-  // 确保前4个正好展现我们的四大核心品类
   products.slice(0, 4).forEach(product => {
     const card = document.createElement('div');
+    card.className = 'featured-card';
     card.innerHTML = `
       <img src="${product.image}" alt="${product.name[lang]}">
       <div class="card-body">
@@ -402,21 +466,26 @@ function renderProducts() {
   if (!container) return;
   container.innerHTML = '';
   const lang = getCurrentLang();
+  
   const categoryFilter = document.getElementById('filter-category')?.value;
   const useFilter = Array.from(document.querySelectorAll('input[name="filter-use"]:checked')).map(el => el.value);
-  const maxPrice = parseFloat(document.getElementById('filter-price').value);
+  const maxPriceInput = document.getElementById('filter-price');
+  const maxPrice = maxPriceInput ? parseFloat(maxPriceInput.value) : NaN;
+  
   let filtered = products.filter(p => {
     const categoryOk = !categoryFilter || categoryFilter === 'all' || p.category === categoryFilter;
     const useOk = useFilter.length === 0 || useFilter.some(u => p.uses.includes(u));
     const priceOk = isNaN(maxPrice) || p.price <= maxPrice;
     return categoryOk && useOk && priceOk;
   });
+  
   if (filtered.length === 0) {
     const msg = document.createElement('p');
     msg.textContent = translations[lang].noProducts;
     container.appendChild(msg);
     return;
   }
+  
   filtered.forEach(product => {
     const card = document.createElement('div');
     card.className = 'product-card';
@@ -474,27 +543,6 @@ function renderProductDetails() {
   `;
 }
 
-function renderAchievements() {
-  const container = document.getElementById('achievements');
-  if (!container) return;
-  container.innerHTML = '';
-  const items = [
-    { value: 10, labelEn: 'Years Empowering Women', labelZh: '持续赋能年数' },
-    { value: 50, labelEn: 'Artisans Supported', labelZh: '支持匠人数' },
-    { value: 5, labelEn: 'Awards Received', labelZh: '获得奖项' }
-  ];
-  const lang = getCurrentLang();
-  items.forEach(item => {
-    const card = document.createElement('div');
-    card.className = 'achievement';
-    card.innerHTML = `
-      <h3>${item.value}</h3>
-      <p>${lang === 'en' ? item.labelEn : item.labelZh}</p>
-    `;
-    container.appendChild(card);
-  });
-}
-
 function renderImpactStats() {
   const peopleEl = document.getElementById('people-supported');
   const itemsEl = document.getElementById('items-sold');
@@ -516,7 +564,7 @@ function renderImpactStats() {
 
 function renderImpactChart() {
   const canvas = document.getElementById('impact-chart');
-  if (!canvas) return;
+  if (!canvas || typeof Chart === 'undefined') return;
   const lang = getCurrentLang();
   const ctx = canvas.getContext('2d');
   if (window.impactChart) {
@@ -545,9 +593,7 @@ function renderImpactChart() {
     options: {
       responsive: true,
       scales: {
-        y: {
-          beginAtZero: true
-        }
+        y: { beginAtZero: true }
       }
     }
   });
@@ -588,12 +634,5 @@ document.addEventListener('DOMContentLoaded', () => {
   updateLang();
   renderFilters();
   addFilterListeners();
-  populateFeaturedProducts();
-  populateStories();
-  populateTestimonials();
-  renderProducts();
-  renderProductDetails();
-  renderImpactStats();
-  renderImpactChart();
-  renderTrainings();
+  refreshDynamicContent();
 });
